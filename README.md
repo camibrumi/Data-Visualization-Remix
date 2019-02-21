@@ -1,6 +1,14 @@
 Assignment 4 - ~~Visualizations and Multiple Views~~ DataVis Remix!  
 ===
 
+chart to modify
+https://www.bloomberg.com/businessweek
+code reference d3
+https://bl.ocks.org/gordlea/27370d1eea8464b04538e6d8ced39e89
+https://codepen.io/zakariachowdhury/pen/JEmjwq
+https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f
+https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4fchart to modifychartCritique
+
 The primary aim of this assignment is to showcase your **individual** skills at critiquing and creating interactive visualizations on the web.
 
 ### Your Task
@@ -34,7 +42,7 @@ Requirements
 
 0. Your code should be forked from the GitHub repo and linked using GitHub pages.
 1. Your project should load a dataset you found on the web from the vis you're remixing. You may extract the data by sight if necessary. Put this file in your repo.
-2. Your project should use d3 to build a visualization of the dataset. 
+2. Your project should use d3 to build a visualization of the dataset.
 3. Your writeup (readme.md in the repo) should contain the following:
 
 - Working link to the visualization hosted on gh-pages.
