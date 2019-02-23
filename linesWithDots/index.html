@@ -9,7 +9,8 @@
 
 <!-- Color Scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<p id="tag">HELLO</p>
+<h1 id="nameTag"></h1>
+<h1 id="tag">Hover the mouse over a line to see the company name, and then over a point to see the number of spaceships they sent in that year.</h1>
 <script>
 
     //
@@ -77,6 +78,13 @@
             .attr("stroke", function(d){ return myColor(d.name) })
             .style("stroke-width", 4)
             .style("fill", "none")
+            .on("mouseover", function (d) {
+                document.getElementById("nameTag").innerHTML = d.name;
+                //console.log(c)
+                //pot sa fac un get element by Id is sa ii schimb valorilem pot sa fac si cu imagine in loc de a zice spaceship
+                //console.log("hey")
+                //this.attr('class', 'focus')
+            })
 
         // Add the points
         svg
@@ -96,8 +104,8 @@
             .attr("r", 5)
             .attr("stroke", "white")
             .on("mouseover", function (a, b, c) {
-                document.getElementById("tag").innerHTML = a.time;
-                console.log(a)
+                document.getElementById("tag").innerHTML =  "sent " + a.value + " spaceships during " + a.time;
+                console.log(c)
                 //pot sa fac un get element by Id is sa ii schimb valorilem pot sa fac si cu imagine in loc de a zice spaceship
                 //console.log("hey")
                 //this.attr('class', 'focus')
