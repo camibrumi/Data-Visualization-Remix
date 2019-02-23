@@ -8,6 +8,7 @@ https://bl.ocks.org/gordlea/27370d1eea8464b04538e6d8ced39e89
 https://codepen.io/zakariachowdhury/pen/JEmjwq
 https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f
 https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4fchart to modifychartCritique
+https://bl.ocks.org/LemoNode/a9dc1a454fdc80ff2a738a9990935e9d
 
 The primary aim of this assignment is to showcase your **individual** skills at critiquing and creating interactive visualizations on the web.
 

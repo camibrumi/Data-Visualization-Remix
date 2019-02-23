@@ -42,7 +42,7 @@
         , height = window.innerHeight - margin.top - margin.bottom; // Use the window's height
 
     // The number of datapoints
-    var n = 21;
+    var n = 5;
 
     // 5. X scale will use the index of our data
     var xScale = d3.scaleLinear()
@@ -103,19 +103,19 @@
     // 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
     var dataset1 = d3.range(n).map(function (d) {
         return {"y": d3.randomUniform(1)()}
-    })
+    });
     var dataset2 = d3.range(n).map(function (d) {
         return {"y": d3.randomUniform(1)()}
-    })
+    });
     var dataset3 = d3.range(n).map(function (d) {
         return {"y": d3.randomUniform(1)()}
-    })
+    });
     var dataset4 = d3.range(n).map(function (d) {
         return {"y": d3.randomUniform(1)()}
-    })
+    });
     var dataset5 = d3.range(n).map(function (d) {
         return {"y": d3.randomUniform(1)()}
-    })
+    });
 
     // 1. Add the SVG to the page and employ #2
     var svg = d3.select("body").append("svg")
@@ -179,12 +179,11 @@
         })
         .attr("r", 5)
         .on("mouseover", function (a, b, c) {
-            console.log(a)
-            //console.log("hey")
+            console.log(a);
             //this.attr('class', 'focus')
         })
         .on("mouseout", function () {
-        })
+        });
 
     svg.selectAll(".dot")
         .data(dataset2)
@@ -199,11 +198,12 @@
         .attr("r", 5)
         .on("mouseover", function (a, b, c) {
             console.log(a)
-            //console.log("hey")
+            console.log("hey")
             //this.attr('class', 'focus')
         })
         .on("mouseout", function () {
-        })
+
+        });
 
     svg.selectAll(".dot")
         .data(dataset3)
@@ -261,6 +261,12 @@
         })
         .on("mouseout", function () {
         })
+
+    legend = svg.append("g")
+        .attr("class","legend")
+        .attr("transform","translate(50,30)")
+        .style("font-size","12px")
+        //.call(d3.legend)
     //       .on("mousemove", mousemove);
 
     //   var focus = svg.append("g")
