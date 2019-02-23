@@ -9,16 +9,14 @@
 
 <!-- Color Scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<h1 id="nameTag"></h1>
-<h1 id="tag">Hover the mouse over a line to see the company name, and then over a point to see the number of spaceships they sent in that year.</h1>
+<h1 id="nomeTag"></h1>
+<h1 id="tag">HELLO</h1>
 <script>
-
     //
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 100, bottom: 30, left: 30},
         width = 460*2 - margin.left - margin.right,
         height = 400*2 - margin.top - margin.bottom;
-
     // append the svg object to the body of the page
     var svg = d3.select("#my_dataviz")
         .append("svg")
@@ -27,13 +25,10 @@
         .append("g")
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
-
     //Read the data
     d3.csv("data.csv", function(data) {
-
         // List of groups (here I have one group per column)
         var allGroup = ["valueA", "valueB", "valueC"]
-
         // Reformat the data: we need an array of arrays of {x, y} tuples
         var dataReady = allGroup.map( function(grpName) { // .map allows to do something for each element of the list
             return {
@@ -45,12 +40,10 @@
         });
         // I strongly advise to have a look to dataReady with
         // console.log(dataReady)
-
         // A color scale: one color for each group
         var myColor = d3.scaleOrdinal()
             .domain(allGroup)
             .range(d3.schemeSet2);
-
         // Add X axis --> it is a date format
         var x = d3.scaleLinear()
             .domain([2008,2017])
@@ -58,14 +51,12 @@
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
-
         // Add Y axis
         var y = d3.scaleLinear()
             .domain( [0,20])
             .range([ height, 0 ]);
         svg.append("g")
             .call(d3.axisLeft(y));
-
         // Add the lines
         var line = d3.line()
             .x(function(d) { return x(+d.time) })
@@ -79,13 +70,12 @@
             .style("stroke-width", 4)
             .style("fill", "none")
             .on("mouseover", function (d) {
-                document.getElementById("nameTag").innerHTML = d.name;
+                document.getElementById("nomeTag").innerHTML = d.name;
                 //console.log(c)
                 //pot sa fac un get element by Id is sa ii schimb valorilem pot sa fac si cu imagine in loc de a zice spaceship
                 //console.log("hey")
                 //this.attr('class', 'focus')
             })
-
         // Add the points
         svg
         // First we need to enter in a group
@@ -105,14 +95,13 @@
             .attr("stroke", "white")
             .on("mouseover", function (a, b, c) {
                 document.getElementById("tag").innerHTML =  "sent " + a.value + " spaceships during " + a.time;
-                console.log(c)
+                console.log(a)
                 //pot sa fac un get element by Id is sa ii schimb valorilem pot sa fac si cu imagine in loc de a zice spaceship
                 //console.log("hey")
                 //this.attr('class', 'focus')
             })
             .on("mouseout", function () {
             })
-
         // Add a legend at the end of each line
         svg
             .selectAll("myLabels")
@@ -126,8 +115,5 @@
             .text(function(d) { return d.name; })
             .style("fill", function(d){ return myColor(d.name) })
             .style("font-size", 15)
-
     })
-
-
 </script>
