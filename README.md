@@ -12,6 +12,7 @@ https://bl.ocks.org/LemoNode/a9dc1a454fdc80ff2a738a9990935e9d
 
 lines and dots:
 http://bl.ocks.org/mgold/6a32cec6380b6ce75c1e
+https://www.d3-graph-gallery.com/graph/connectedscatter_multi.html // current one
 
 The primary aim of this assignment is to showcase your **individual** skills at critiquing and creating interactive visualizations on the web.
 
