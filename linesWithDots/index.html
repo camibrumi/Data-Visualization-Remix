@@ -9,7 +9,7 @@
 
 <!-- Color Scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
+<p id="tag">HELLO</p>
 <script>
 
     //
@@ -95,6 +95,15 @@
             .attr("cy", function(d) { return y(d.value) } )
             .attr("r", 5)
             .attr("stroke", "white")
+            .on("mouseover", function (a, b, c) {
+                document.getElementById("tag").innerHTML = a.time;
+                console.log(a)
+                //pot sa fac un get element by Id is sa ii schimb valorilem pot sa fac si cu imagine in loc de a zice spaceship
+                //console.log("hey")
+                //this.attr('class', 'focus')
+            })
+            .on("mouseout", function () {
+            })
 
         // Add a legend at the end of each line
         svg
