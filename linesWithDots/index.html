@@ -4,13 +4,12 @@
 <!-- Load d3.js -->
 <script src="http://d3js.org/d3.v4.js"></script>
 
+<h1>Number of Rocket Launches</h1>
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 
 <!-- Color Scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<h1 id="nomeTag"></h1>
-<h1 id="tag">Hover over a line first to see the company name. Hover over the dots to see more details.</h1>
 
 <style type="text/css">
 
@@ -48,7 +47,7 @@
 <div id="tooltip" class="hidden">
     <p><strong>Spaceships</strong></p>
     <p><span id="value">100</span></p>
-    <p><strong>year</strong></p>
+    <p><strong>Year</strong></p>
     <p><span id="year">100</span></p>
 </div>
 <script>
@@ -107,14 +106,7 @@
             .attr("d", function(d){ return line(d.values) } )
             .attr("stroke", function(d){ return myColor(d.name) })
             .style("stroke-width", 7)
-            .style("fill", "none")
-            .on("mouseover", function (d) {
-                document.getElementById("nomeTag").innerHTML = d.name;
-                //console.log(c)
-                //pot sa fac un get element by Id is sa ii schimb valorilem pot sa fac si cu imagine in loc de a zice spaceship
-                //console.log("hey")
-                //this.attr('class', 'focus')
-            })
+            .style("fill", "none");
         // Add the points
         svg
         // First we need to enter in a group
@@ -133,9 +125,6 @@
             .attr("r", 8)
             .attr("stroke", "white")
             .on("mouseover", function (a, b, c) {
-                document.getElementById("tag").innerHTML =  "sent " + a.value + " spaceships during " + a.time;
-                console.log(a)
-                console.log(c)
                 var xPosition = parseFloat(d3.select(this).attr("cx")) + 50;
                 var yPosition = parseFloat(d3.select(this).attr("cy")) + 25;
 
@@ -156,6 +145,7 @@
                 d3.select("#tooltip").classed("hidden", false);
             })
             .on("mouseout", function () {
+                d3.select("#tooltip").classed("hidden", true);
             })
         // Add a legend at the end of each line
         svg
@@ -169,6 +159,6 @@
             .attr("x", 12) // shift the text a bit more right
             .text(function(d) { return d.name; })
             .style("fill", function(d){ return myColor(d.name) })
-            .style("font-size", 15)
+            .style("font-size", 18)
     })
 </script>

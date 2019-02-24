@@ -14,6 +14,10 @@ lines and dots:
 http://bl.ocks.org/mgold/6a32cec6380b6ce75c1e
 https://www.d3-graph-gallery.com/graph/connectedscatter_multi.html // current one
 
+the tooltips (tags when the mouse goes over a point)
+https://bl.ocks.org/sarubenfeld/56dc691df199b4055d90e66b9d5fc0d2
+
+
 The primary aim of this assignment is to showcase your **individual** skills at critiquing and creating interactive visualizations on the web.
 
 ### Your Task
