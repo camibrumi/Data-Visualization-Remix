@@ -10,7 +10,7 @@
 <!-- Color Scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <h1 id="nomeTag"></h1>
-<h1 id="tag">HELLO</h1>
+<h1 id="tag">Hover over a line first to see the company name. Hover over the dots to see more details.</h1>
 <script>
     //
     // set the dimensions and margins of the graph
@@ -28,7 +28,7 @@
     //Read the data
     d3.csv("data.csv", function(data) {
         // List of groups (here I have one group per column)
-        var allGroup = ["valueA", "valueB", "valueC"]
+        var allGroup = ["Roscosmos", "Other", "CGWIC"]
         // Reformat the data: we need an array of arrays of {x, y} tuples
         var dataReady = allGroup.map( function(grpName) { // .map allows to do something for each element of the list
             return {
@@ -67,7 +67,7 @@
             .append("path")
             .attr("d", function(d){ return line(d.values) } )
             .attr("stroke", function(d){ return myColor(d.name) })
-            .style("stroke-width", 4)
+            .style("stroke-width", 7)
             .style("fill", "none")
             .on("mouseover", function (d) {
                 document.getElementById("nomeTag").innerHTML = d.name;
@@ -91,7 +91,7 @@
             .append("circle")
             .attr("cx", function(d) { return x(d.time) } )
             .attr("cy", function(d) { return y(d.value) } )
-            .attr("r", 5)
+            .attr("r", 8)
             .attr("stroke", "white")
             .on("mouseover", function (a, b, c) {
                 document.getElementById("tag").innerHTML =  "sent " + a.value + " spaceships during " + a.time;
