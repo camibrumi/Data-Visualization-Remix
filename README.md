@@ -1,4 +1,4 @@
-Assignment 4 - ~~Visualizations and Multiple Views~~ DataVis Remix!  
+Assignment 4 - DataVis Remix!  
 ===
 ### Camelia Daniela Brumar
 
@@ -43,6 +43,3 @@ https://codepen.io/zakariachowdhury/pen/JEmjwq <br>
 https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f <br>
 https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4fchart <br>
 https://bl.ocks.org/LemoNode/a9dc1a454fdc80ff2a738a9990935e9d <br>
-
-lines and dots: <br>
-http://bl.ocks.org/mgold/6a32cec6380b6ce75c1e <br>
