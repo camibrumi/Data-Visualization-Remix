@@ -2,6 +2,9 @@ Assignment 4 - DataVis Remix!
 ===
 ### Camelia Daniela Brumar
 
+Link to github pages:
+https://camibrumi.github.io/remix/index.html
+
 Chart to modify: <br>
 ![chartToModify](https://i.imgur.com/ILWdFei.png)
  <br>
