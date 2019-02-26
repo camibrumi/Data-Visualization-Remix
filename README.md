@@ -2,18 +2,18 @@ Assignment 4 - ~~Visualizations and Multiple Views~~ DataVis Remix!
 ===
 ### Camelia Daniela Brumar
 
-Chart to modify:
-[chartToModify]!(https://i.imgur.com/ILWdFei.png)
-
+Chart to modify: <br>
+![chartToModify](https://i.imgur.com/ILWdFei.png)
+ <br>
 This is a spaghetti chart, it is difficult at a glance to see which line belongs to which company and also it is difficult to see how many spaceships have launched every company along each year.
 
 <br>
 
-Improved chart with interaction:
+Improved chart with interaction: <br>
 
-[ImprovedChart]!(https://i.imgur.com/iHjxbk2.png)
-
-[ImprovedChartInteraction]!(https://i.imgur.com/bpMOdYv.png)
+![ImprovedChart](https://i.imgur.com/iHjxbk2.png)
+ <br>
+![ImprovedChartInteraction](https://i.imgur.com/bpMOdYv.png)
 
 <br>
 
