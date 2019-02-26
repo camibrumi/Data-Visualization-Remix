@@ -1,60 +1,48 @@
 Assignment 4 - ~~Visualizations and Multiple Views~~ DataVis Remix!  
 ===
+### Camelia Daniela Brumar
 
-chart to modify
-https://www.bloomberg.com/businessweek
-code reference d3
-https://bl.ocks.org/gordlea/27370d1eea8464b04538e6d8ced39e89
-https://codepen.io/zakariachowdhury/pen/JEmjwq
-https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f
-https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4fchart to modifychartCritique
-https://bl.ocks.org/LemoNode/a9dc1a454fdc80ff2a738a9990935e9d
+Chart to modify:
+[chartToModify]!(https://i.imgur.com/ILWdFei.png)
 
-lines and dots:
-http://bl.ocks.org/mgold/6a32cec6380b6ce75c1e
-https://www.d3-graph-gallery.com/graph/connectedscatter_multi.html // current one
+This is a spaghetti chart, it is difficult at a glance to see which line belongs to which company and also it is difficult to see how many spaceships have launched every company along each year.
+
+<br>
+
+Improved chart with interaction:
+
+[ImprovedChart]!(https://i.imgur.com/iHjxbk2.png)
+
+[ImprovedChartInteraction]!(https://i.imgur.com/bpMOdYv.png)
+
+<br>
+
+The improved chart uses the color channel for the different companies (design achievement). Also it has interaction. When the user hovers the mouse over a point, the number of spaceships and the year details are displayed in a tooltips. This feature was not in the starter code I have found for the line chart (technical achievement).
 
 the tooltips (tags when the mouse goes over a point)
 https://bl.ocks.org/sarubenfeld/56dc691df199b4055d90e66b9d5fc0d2
 
+## The code of the Visualization
+Can be found in the linesWithDots folder. The other file are trials of the same projects but with different starter codes. Those ones did not work as expected.
 
-The primary aim of this assignment is to showcase your **individual** skills at critiquing and creating interactive visualizations on the web.
+## Data
+Extracted by sight. Can be found in the linesWithDots folder as data.csv.
 
-### Your Task
+# References
+Chart to modify found here: <br>
+https://www.bloomberg.com/businessweek <br>
+Code reference: <br>
+- Main: <br>
+https://www.d3-graph-gallery.com/graph/connectedscatter_multi.html  <br>
+- Tooltips (tags when the mouse goes over a point): <br>
+https://bl.ocks.org/sarubenfeld/56dc691df199b4055d90e66b9d5fc0d2 <br>
 
-Your task is to choose a visualization and remix it.
-By remix, we mean:
+- Other references:
+https://bl.ocks.org/gordlea/27370d1eea8464b04538e6d8ced39e89 <br>
+https://codepen.io/zakariachowdhury/pen/JEmjwq <br>
+https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f <br>
+https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4fchart <br>
+https://bl.ocks.org/LemoNode/a9dc1a454fdc80ff2a738a9990935e9d <br>
 
-- Critique the original vis
-- Redesign some aspect of it
-- Implement your redesign
-
-Examples of remixes include:
-- taking a static choropleth map with a bad color scale, implementing a new version in d3, adding interactivity, and improving the color scale to show the original data in a more effective way
-- finding a poorly designed or hard-to-use interactive visualization, and making a new version with easier to use navigation, features that enable the user to explore the data in new ways, and possibly adding new views
-
-**Remember: the intent of this assignment is for you to demonstrate your understanding of the theory (e.g. concepts from Munzner's book) and practice (d3, and any tools you use for exploring the data) of visualization.**
-
-Incorporating a brief writeup with your remix is a good idea.
-Communicate what the original vis was, what the major issues were, and what new things can be seen with your redesign.
-You could have text directly on the page, an "info" button, an about page, etc.
-
-### Multiple Views (potentially useful info for certain remix directions)
-One of the most powerful techniques for mitigating the shortcomings of a given visualization is to link it with other views.
-
-Linking a map to a bar or scatterplot, for instance, may allow you to overcome the shortcomings of a map.
-
-In general, linking visualizations allows you to explore different parts of the data between views, and mitigates the shortcomings of a given view by pairing it with other views.
-
-Requirements
----
-
-0. Your code should be forked from the GitHub repo and linked using GitHub pages.
-1. Your project should load a dataset you found on the web from the vis you're remixing. You may extract the data by sight if necessary. Put this file in your repo.
-2. Your project should use d3 to build a visualization of the dataset.
-3. Your writeup (readme.md in the repo) should contain the following:
-
-- Working link to the visualization hosted on gh-pages.
-- Concise description and screenshot of your visualization.
-- Description of the technical achievements you attempted with this visualization.
-- Description of the design achievements you attempted with this visualization.
+lines and dots: <br>
+http://bl.ocks.org/mgold/6a32cec6380b6ce75c1e <br>
